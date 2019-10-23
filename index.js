@@ -28,12 +28,13 @@ function viewCart() {
       if (i === cart.length && cart.length != 1) {
         let endItem = (` and ${cart[i][itemName]} at ${cart[i][itemPrice]}`)
         returnStr += endItem
-      } else if (i < cart.length)
-      let middleItem = (` ${cart[i][itemName]} at ${cart[i][itemPrice]}`
+      } else if (i < cart.length){
+      let middleItem = (` ${cart[i][itemName]} at ${cart[i][itemPrice]}`)
         returnStr += middleItem + endItem
 
     }
     return returnStr
+  }
   }
 }
 
