@@ -26,7 +26,7 @@ newArray = []
   } else { for (let i = 0; i < cart.length; i++) {
 newArray.push(cart[i])
   }
-  
+
 return newArray
 }
 }
