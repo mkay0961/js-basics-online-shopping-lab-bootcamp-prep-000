@@ -30,11 +30,15 @@ function viewCart() {
         returnStr += endItem
       } else if (i < cart.length){
       let middleItem = (` ${cart[i]["itemName"]} at $${cart[i]["itemPrice"]}`)
+      if (cart.length === 1 ) {
         returnStr += middleItem
+      } else {
+        returnStr += middleItem+","
+      }
 
     }
   }
-  return returnStr +"."
+  return returnStr+"."
   }
 }
 
