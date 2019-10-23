@@ -51,6 +51,13 @@ let total = 0
 }
 
 function removeFromCart(item) {
+arrayNew = []
+for (let i = 0; i<cart.length;i++){
+  if (item = cart[i]["itemName"])
+  array.splice(i, item)
+  return arrayNew
+} else 
+return "That item is not in your cart."
 
 }
 
