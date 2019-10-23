@@ -33,8 +33,8 @@ function viewCart() {
         returnStr += middleItem
 
     }
-    return returnStr
   }
+  return returnStr
   }
 }
 
