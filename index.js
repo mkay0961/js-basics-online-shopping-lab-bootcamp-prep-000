@@ -25,12 +25,12 @@ function viewCart() {
     return "Your shopping cart is empty."
   } else {
     for (let i = 0; i<cart.length; i++){
-      if (i === cart.length && cart.length != 1) {
+      if (i === cart.length-1 && cart.length != 1) {
         let endItem = (` and ${cart[i]["itemName"]} at ${cart[i]["itemPrice"]}`)
         returnStr += endItem
       } else if (i < cart.length){
       let middleItem = (` ${cart[i]["itemName"]} at ${cart[i]["itemPrice"]}`)
-        returnStr += middleItem + endItem
+        returnStr += middleItem
 
     }
     return returnStr
