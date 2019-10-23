@@ -51,7 +51,7 @@ let total = 0
 }
 
 function removeFromCart(item) {
-arrayNew = []
+var arrayNew = []
 for (let i = 0; i<cart.length;i++){
   if (item = cart[i]["itemName"]){
   arrayNew.splice(i, cart)
