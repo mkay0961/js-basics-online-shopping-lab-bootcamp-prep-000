@@ -56,8 +56,9 @@ for (let i = 0; i<cart.length;i++){
   if (item = cart[i]["itemName"]){
   arrayNew.splice(i, cart)
   return arrayNew
-} else
+} else {
 return "That item is not in your cart."
+}
 }
 
 }
