@@ -18,18 +18,22 @@ function addToCart(item) {
   return (`${item} has been added to your cart.`)
 }
 
-function viewCart(cart) {
-  // write your code here
-newArray = []
-  // if cart is empty
-  if (cart.length === 0){
-    return console.log("Your shopping cart is empty.")
-  } else {
-    for (let i = 0; i < cart.length; i++) {
-      newArray.push(cart[i])
-    }
+function viewCart() {
 
-    return newArray
+  let returnStr = "In your cart, you have"
+  if (cart.length === 0){
+    return "Your shopping cart is empty."
+  } else {
+    for (let i = 0; i<cart.length; i++){
+      if (i === cart.length && cart.length != 1) {
+        let endItem = (` and ${cart[i][itemName]} at ${cart[i][itemPrice]}`)
+        returnStr += endItem
+      } else if (i < cart.length)
+      let middleItem = (` ${cart[i][itemName]} at ${cart[i][itemPrice]}`
+        returnStr += middleItem + endItem
+
+    }
+    return returnStr
   }
 }
 
