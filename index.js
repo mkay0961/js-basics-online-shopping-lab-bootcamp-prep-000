@@ -23,7 +23,7 @@ newArray = []
   // if cart is empty
   if (cart.length === 0){
     return console.log("Your shopping cart is empty.")
-  } else for (var i = 0; i < cart.length) {
+  } else if (var i = 0; i < cart.length; i++) {
 newArray.push(cart[i])
   }
 return newArray
