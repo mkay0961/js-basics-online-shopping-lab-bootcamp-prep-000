@@ -12,7 +12,8 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
   let price = Math.floor(((Math.random() * 100) + 1))
-  cart.push({[item]: price})
+
+  cart.push({itemName: item, itemPrice: price})
   console.log(`${item} has been added to your cart.`)
   return cart
 }
@@ -23,12 +24,13 @@ newArray = []
   // if cart is empty
   if (cart.length === 0){
     return console.log("Your shopping cart is empty.")
-  } else { for (let i = 0; i < cart.length; i++) {
-newArray.push(cart[i])
-  }
+  } else {
+    for (let i = 0; i < cart.length; i++) {
+      newArray.push(cart[i])
+    }
 
-return newArray
-}
+    return newArray
+  }
 }
 
 function total() {
