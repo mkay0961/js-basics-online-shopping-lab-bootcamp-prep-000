@@ -57,8 +57,8 @@ for (let i = 0; i<cart.length;i++){
   arrayNew.splice(i, item)
   return arrayNew
 } else
-}
 return "That item is not in your cart."
+}
 
 }
 
