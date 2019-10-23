@@ -17,7 +17,7 @@ function addToCart(item) {
   return cart
 }
 
-function viewCart() {
+function viewCart(cart) {
   // write your code here
 newArray = []
   // if cart is empty
