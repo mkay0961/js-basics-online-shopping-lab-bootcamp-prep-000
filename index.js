@@ -19,14 +19,14 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-
+newArray = []
   // if cart is empty
   if (cart.length === 0){
     return console.log("Your shopping cart is empty.")
   } else for (var i = 0; i < cart.length) {
-
+newArray.push(cart[i])
   }
-
+return newArray
 
 }
 
