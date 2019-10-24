@@ -57,14 +57,14 @@ for (let i = 0; i<cart.length;i++){
   cart.splice(i+1,1)
   itemInCart = true
   console.log(cart);
-
-}
-}
-  if (!itemInCart) {
-    console.log("That item is not in your cart.");
-  }
   return cart
 }
+} else  if (item != cart[i]["itemName"]) {
+console.log("'That item is not in your cart.'");
+return 'That item is not in your cart.'
+}
+}
+
 
 function placeOrder(cardNumber) {
 }
