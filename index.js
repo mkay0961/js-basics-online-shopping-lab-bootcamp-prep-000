@@ -57,10 +57,9 @@ for (let i = 0; i<cart.length;i++){
   cart.splice(i+1,1)
   console.log(cart);
   return cart
-} else { if (item != cart[i]["itemName"]) {
+} else  if (item != cart[i]["itemName"]) {
 console.log('That item is not in your cart.');
 return 'That item is not in your cart.'
-}
 }
 }
 }
