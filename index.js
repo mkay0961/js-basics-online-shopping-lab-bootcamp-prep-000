@@ -65,11 +65,11 @@ return 'That item is not in your cart.'
 
 function placeOrder(cardNumber) {
   if (!cardNumber){
-  return "Sorry, we don't have a credit card on file for you."
-} else {
-
-console.log(`${total()} this is the test total`)
-  return (`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
-
+    return "Sorry, we don't have a credit card on file for you."
+  } else {
+      let currentTotal = total()
+      cart = []
+      let returnStr = (`Your total cost is $${currentTotal}, which will be charged to the card ${cardNumber}.`)
+return returnStr
 }
 }
