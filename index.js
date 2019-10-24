@@ -71,6 +71,3 @@ function placeOrder(cardNumber) {
 }
 }
 
-if reservation (start1,end1,start2,end2){
-  if (start1 <= end2 ||
-}
