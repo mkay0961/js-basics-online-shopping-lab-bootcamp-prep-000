@@ -64,4 +64,13 @@ return 'That item is not in your cart.'
 }
 
 function placeOrder(cardNumber) {
+  if (!cardNumber){
+  return "Sorry, we don't have a credit card on file for you."
+} else {
+  return (`Your total cost is $${total()}`)
+}
+}
+
+if reservation (start1,end1,start2,end2){
+  if (start1 <= end2 || 
 }
