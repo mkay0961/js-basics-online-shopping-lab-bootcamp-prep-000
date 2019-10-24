@@ -58,11 +58,12 @@ for (let i = 0; i<cart.length;i++){
 
   console.log(cart);
   return cart
-} else  if (item != cart[i]["itemName"]) {
-console.log("'That item is not in your cart.'");
+} else  {
 return 'That item is not in your cart.'
 }
+return 'That item is not in your cart.'
 }
+return 'That item is not in your cart.'
 }
 
 function placeOrder(cardNumber) {
