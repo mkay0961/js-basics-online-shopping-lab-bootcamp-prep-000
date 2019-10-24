@@ -51,17 +51,18 @@ let total = 0
 }
 
 function removeFromCart(item) {
-var arrayNew = []
+var itemInCart = false
 for (let i = 0; i<cart.length;i++){
   if (item = cart[i]["itemName"]){
   cart.splice(i+1,1)
+  itemInCart = true
   console.log(cart);
   return cart
-} else  if (item != cart[i]["itemName"]) {
-console.log("'That item is not in your cart.'");
-return 'That item is not in your cart.'
 }
-}
+  if (!itemInCart) {
+    console.log("That item is not in your cart.");
+  }
+  return cart
 }
 
 function placeOrder(cardNumber) {
