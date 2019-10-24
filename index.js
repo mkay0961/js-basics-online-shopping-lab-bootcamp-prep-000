@@ -70,6 +70,6 @@ function placeOrder(cardNumber) {
       let currentTotal = total()
       cart = []
       let returnStr = (`Your total cost is $${currentTotal}, which will be charged to the card ${cardNumber}.`)
-return returnStr
+      return returnStr
 }
 }
